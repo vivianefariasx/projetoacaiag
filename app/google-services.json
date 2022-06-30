@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "1013505819630",
+    "project_id": "projetoacaiag",
+    "storage_bucket": "projetoacaiag.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:1013505819630:android:261b808b5fe38f066684ff",
+        "android_client_info": {
+          "package_name": "com.example.projetoacaiag"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "1013505819630-0ii2q4ad0rhgch2isb8hnc8ltve19eoi.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDsULRBRG3Y2mUh3zKLdRpN4-Gakdn4PcI"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "1013505819630-0ii2q4ad0rhgch2isb8hnc8ltve19eoi.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
