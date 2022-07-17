@@ -13,16 +13,16 @@ import androidx.recyclerview.widget.RecyclerView;
 
 import com.bumptech.glide.Glide;
 import com.example.projetoacaiag.Domain.CategoryDomain;
+import com.example.projetoacaiag.Domain.FoodDomain;
 import com.example.projetoacaiag.R;
 
-import java.time.Instant;
 import java.util.ArrayList;
 
-public class CategoryAdaptor extends RecyclerView.Adapter<CategoryAdaptor.ViewHolder> {
-    ArrayList<CategoryDomain> categoryDomains;
+public class PopularAdaptor extends RecyclerView.Adapter<PopularAdaptor.ViewHolder> {
+    ArrayList<FoodDomain> categoryFood;
 
-    public CategoryAdaptor(ArrayList<CategoryDomain> categoryDomains) {
-        this.categoryDomains = categoryDomains;
+    public PopularAdaptor(ArrayList<FoodDomain> categoryFood) {
+        this.categoryFood = categoryFood;
     }
 
     @Override
@@ -33,7 +33,7 @@ public class CategoryAdaptor extends RecyclerView.Adapter<CategoryAdaptor.ViewHo
 
     @Override
     public void onBindViewHolder(@NonNull ViewHolder holder, int position) {
-        holder.categoryName.setText(categoryDomains.get(position).getTitle());
+        holder.categoryName.setText(categoryFood.get(position).getTitle());
         String picUrl ="";
         switch (position){
             case 0:{
@@ -76,7 +76,7 @@ public class CategoryAdaptor extends RecyclerView.Adapter<CategoryAdaptor.ViewHo
 
     @Override
     public int getItemCount() {
-        return categoryDomains.size();
+        return categoryFood.size();
     }
 
     public class ViewHolder extends RecyclerView.ViewHolder {
