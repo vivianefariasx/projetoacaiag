@@ -25,6 +25,7 @@ public class MainActivity extends AppCompatActivity {
         setContentView(R.layout.activity_main);
 
         recyclerViewCategory();
+        recyclerViewPopular();
     }
 
     private void recyclerViewCategory() {
@@ -49,6 +50,8 @@ public class MainActivity extends AppCompatActivity {
     private void recyclerViewPopular(){
         LinearLayoutManager linearLayoutManager = new LinearLayoutManager(this, LinearLayoutManager.HORIZONTAL, false);
         recyclerViewPopularList=findViewById(R.id.recyclerView2);
+        recyclerViewPopularList.setLayoutManager(LinearLayoutManager);
+
 
         ArrayList<FoodDomain> foodList=new ArrayList<>();
         foodList.add(new FoodDomain("Açai com morango", "acai1","acai de 300 MLS com pedaços de morango e calda de morango","15.00"));
